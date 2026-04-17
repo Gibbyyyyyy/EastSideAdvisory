@@ -56,7 +56,7 @@ def start_gui():
     tk.Label(main_frame, text="Select Sheet Number:", font=("DejaVu Sans", 12, "bold italic")).pack(pady=5)
 
     #Hard coded path. This path will not change.
-    path = r"C:\EE416kalmia\Python\Lab Data\export"
+    path = r"C:\EastSideAdvisory\EE416kalmia\Python\Lab Data\export"
 
     #get_sheet_nums returns all the different sheet numbers that are found in the folder. We could hard code the sheet numbers that are 
     #in the folder but this is more robust
@@ -163,7 +163,7 @@ def start_gui():
         # Worker runs in background so the window stays responsive
         def worker():
             from process_sheet import process_sheet
-            samples = process_sheet(int(sheet), r"C:\EE416kalmia\Python\Lab Data", int(snr), progress_callback=update_progress)
+            samples = process_sheet(int(sheet), r"C:\EastSideAdvisory\EE416kalmia\Python\Lab Data", int(snr), progress_callback=update_progress)
 
             elapsed = time.perf_counter() - t_start
             print(f"\nTotal processing time: {elapsed:.2f} seconds")

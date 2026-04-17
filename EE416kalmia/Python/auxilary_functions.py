@@ -21,6 +21,6 @@ def openSheet(location, sheetNumber):
 if __name__ == "__main__":
     
     sheetNum = 41
-    samplePathObjects = openSheet(r"C:\EE416kalmia\Python\Lab Data",sheetNum)
+    samplePathObjects = openSheet(r"C:\EastSideAdvisory\EE416kalmia\Python\Lab Data",sheetNum)
 
   

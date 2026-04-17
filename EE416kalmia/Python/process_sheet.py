@@ -83,7 +83,7 @@ def _process_one_sample(args):
 
 def process_sheet(sheetNum, path, SNRThresh, progress_callback=None):
 
-    samplePathObjects = openSheet(r"C:\EE416kalmia\Python\Lab Data", sheetNum)
+    samplePathObjects = openSheet(r"C:\EastSideAdvisory\EE416kalmia\Python\Lab Data", sheetNum)
 
     args_list = [(spo, SNRThresh) for spo in samplePathObjects]
     total = len(args_list)
